@@ -1,3 +1,3 @@
 # demo
 
-[Rain Couture] (https://faslet.github.io/demo/)
+https://faslet.github.io/demo/
