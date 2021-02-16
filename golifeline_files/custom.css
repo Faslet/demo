@@ -1,0 +1,284 @@
+/* 20210122142901 - v2 */
+.gui,
+.gui-block-linklist li a {
+  color: #666666;
+}
+
+.gui-page-title,
+.gui a.gui-bold,
+.gui-block-subtitle,
+.gui-table thead tr th,
+.gui ul.gui-products li .gui-products-title a,
+.gui-form label,
+.gui-block-title.gui-dark strong,
+.gui-block-title.gui-dark strong a,
+.gui-content-subtitle {
+  color: #000000;
+}
+
+.gui-block-inner strong {
+  color: #848484;
+}
+
+.gui a {
+  color: #0a8de9;
+}
+
+.gui-input.gui-focus,
+.gui-text.gui-focus,
+.gui-select.gui-focus {
+  border-color: #0a8de9;
+  box-shadow: 0 0 2px #0a8de9;
+}
+
+.gui-select.gui-focus .gui-handle {
+  border-color: #0a8de9;
+}
+
+.gui-block,
+.gui-block-title,
+.gui-buttons.gui-border,
+.gui-block-inner,
+.gui-image {
+  border-color: #8d8d8d;
+}
+
+.gui-block-title {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.gui-content-title {
+  color: #333333;
+}
+
+.gui-form .gui-field .gui-description span {
+  color: #666666;
+}
+
+.gui-block-inner {
+  background-color: #f4f4f4;
+}
+
+.gui-block-option {
+  border-color: #ededed;
+  background-color: #f9f9f9;
+}
+
+.gui-block-option-block {
+  border-color: #ededed;
+}
+
+.gui-block-title strong {
+  color: #333333;
+}
+
+.gui-line,
+.gui-cart-sum .gui-line {
+  background-color: #cbcbcb;
+}
+
+.gui ul.gui-products li {
+  border-color: #dcdcdc;
+}
+
+.gui-block-subcontent,
+.gui-content-subtitle {
+  border-color: #dcdcdc;
+}
+
+.gui-faq,
+.gui-login,
+.gui-password,
+.gui-register,
+.gui-review,
+.gui-sitemap,
+.gui-block-linklist li,
+.gui-table {
+  border-color: #dcdcdc;
+}
+
+.gui-block-content .gui-table {
+  border-color: #ededed;
+}
+
+.gui-table thead tr th {
+  border-color: #cbcbcb;
+  background-color: #f9f9f9;
+}
+
+.gui-table tbody tr td {
+  border-color: #ededed;
+}
+
+.gui a.gui-button-large,
+.gui a.gui-button-small {
+  border-color: #8d8d8d;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.gui a.gui-button-large.gui-button-action,
+.gui a.gui-button-small.gui-button-action {
+  border-color: #8d8d8d;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.gui a.gui-button-large:active,
+.gui a.gui-button-small:active {
+  background-color: #cccccc;
+  border-color: #707070;
+}
+
+.gui a.gui-button-large.gui-button-action:active,
+.gui a.gui-button-small.gui-button-action:active {
+  background-color: #cccccc;
+  border-color: #707070;
+}
+
+.gui-input,
+.gui-text,
+.gui-select,
+.gui-number {
+  border-color: #8d8d8d;
+  background-color: #ffffff;
+}
+
+.gui-select .gui-handle,
+.gui-number .gui-handle {
+  border-color: #8d8d8d;
+}
+
+.gui-number .gui-handle a {
+  background-color: #ffffff;
+}
+
+.gui-input input,
+.gui-number input,
+.gui-text textarea,
+.gui-select .gui-value {
+  color: #000000;
+}
+
+.gui-progressbar {
+  background-color: #76c61b;
+}
+
+/* custom */
+{% if ‘account’ in request.url or ‘cart’ in request.url or ‘compare’ in request.url or ‘checkout’ in request.url or ‘search’ in request.url %}
+<meta name=“robots” content=“noindex, nofollow” />
+{% endif %}
+
+/*Richard*/
+.Yourgift {
+  position: absolute;
+  right: 16px;
+  bottom: 3px;
+}
+.widget-payment-methods .widget-content .box {
+  position: relative;
+}
+/*Richard*/
+
+/*Nieuwe menustructuur*/
+#navbar ul.megamenu .maxheight {
+    max-height: 620px;
+}
+.col-md-3.sub-holder {
+    width: 50%;
+}
+.sub3 li {
+    margin-top: 0!important;
+}
+.sub2 li {
+    margin-top: 15px;
+}
+.sub2 li a {
+    font-weight: 600!important;
+}
+.sub3 li a {
+    font-weight: 300!important;
+}
+.sub3 li a {
+    font-weight: 300!important;
+}
+/*Nieuwe menustructuur*/
+
+/*********************/
+/* WEBDINGE 16/01/14 */
+/*********************/
+
+@font-face {
+  font-family: 'SurferBay';
+  src: url('https://static.webshopapp.com/shops/010018/files/181893560/surfer-bay.ttf');
+  format('truetype'); 
+}
+
+#sequence .title {
+  font-size: 7em;
+  font-family: 'SurferBay',sans-serif;
+  text-transform: none;
+}
+
+
+.sidebar .widget {
+  margin-bottom: 20px;
+}
+#weerWidget {
+  clear: both;
+  margin-bottom: 40px;
+}
+
+/*Tim4-3-15*/
+
+.gui-col2-equal-col1  {
+  margin: 5px 0 0 5px;
+}
+
+/*Jeffrey*/
+.gui a.gui-button-large.gui-button-action,
+.gui a.gui-button-small.gui-button-action {
+  border-color: #8D8D8D;
+  color: #FFFFFF;
+  background-color: #FF0000;
+}
+
+/* Blog styling - Daryl - Begin */
+article.gui-blog-article.gui-blog-article-image ul li {
+  list-style-type: disc;
+  margin-left: 30px;
+}
+article.gui-blog-article.gui-blog-article-image header ul li {
+  list-style-type: none;
+  margin-left: 0px;
+}
+/* Blog styling - Daryl - Einde */
+
+#main-nav-container #main-nav .menu li a {
+  padding: 9px 8px;
+}
+#main-nav-container #main-nav .menu li a:hover, #main-nav-container #main-nav .menu li a:focus {
+  color: #ffffff !important;
+}
+
+@media (max-width: 480px) {
+.header-box .usp {
+   padding-bottom: 10px;
+}
+}
+.wsa-cookielaw {
+              box-sizing: unset;
+              white-space: normal;
+              height: auto;
+}
+
+#content img {
+ display: inline-block!important; 
+}
+
+/* Sharlene LightspeedHQ - 25 okt. 2018 - Afterpay verbergen in DE  - START */
+html[lang="de"] .gui-checkout-payment-provider.gui-payment-provider-afterpay {
+    display: none;
+}
+/* Sharlene LightspeedHQ - 25 okt.-2018 - END */

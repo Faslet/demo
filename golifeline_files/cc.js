@@ -1,0 +1,1 @@
+if(console){var cookiedomainwarning='Error: The domain WWW.GOLIFELINE.NL is not authorized to show the cookie banner for domain group ID 82b772a6-2c7d-42e1-a68d-08c1ec58e1f8. Please add it to the domain group in the Cookiebot Manager to authorize the domain.';if(typeof console.warn === 'function'){console.warn(cookiedomainwarning)}else{console.log(cookiedomainwarning)}};

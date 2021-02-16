@@ -1,0 +1,1 @@
+(function(w) { w.loyaltylion && typeof w.loyaltylion.shutdown === 'function' ? w.loyaltylion.shutdown({"sdkHost":"sdk.loyaltylion.net"}) : w.lion && typeof w.lion._push === 'function' ? w.lion._push(['shutdown', {"sdkHost":"sdk.loyaltylion.net"}]) : !0; })(window)
