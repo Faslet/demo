@@ -26,7 +26,7 @@ _The widget will accept the following parameter:_
 
 Place the widget where you want it to be visible.
 ```js
-<faslet
+<faslet-app
     shop-id="myShop"
     product="sweater"
     product-name="NiceSweater"
