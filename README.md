@@ -40,6 +40,6 @@ Place the widget where you want it to be visible.
 The snipped can be anywhere in the page:
 
 ```js
-<script src="https://unpkg.com/vue"​ ></script>
+<script src="https://unpkg.com/vue"></script>
 <script src="https://faslet-prod.web.app/faslet-app.min.js"></script>
 ```
