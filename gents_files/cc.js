@@ -1,0 +1,1 @@
+if(console){var cookiedomainwarning='Error: The domain WWW.GENTS.NL is not authorized to show the cookie banner for domain group ID ee6cb02e-df98-4aac-88d3-f0f8a84a3acd. Please add it to the domain group in the Cookiebot Manager to authorize the domain.';if(typeof console.warn === 'function'){console.warn(cookiedomainwarning)}else{console.log(cookiedomainwarning)}};
