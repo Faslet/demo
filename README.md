@@ -3,10 +3,7 @@
 You can add the scripts anywhere in your html, preferable inside the at the bottom of the page. The total size of the scripts combined is approx 185KB gzipped.
 In the example script below we use the text ‘Size me up!’ but you can change this. You could also use an image or icon instead of only text to trigger the Faslet widget.
 
-![Faslet Widget](https://faslet.github.io/demo/docs/demo.png "FasletWidget")
-
-![Faslet Widget](https://github.com/faslet/demo/blob/master/docs/demo.jpg?raw=true)
-
+![Faslet Widget](https://github.com/Faslet/demo/blob/master/docs/demo.png?raw=true)
 
 ### Demo
 
