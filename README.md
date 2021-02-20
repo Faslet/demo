@@ -42,7 +42,7 @@ Place the widget where you want it to be visible.
 </faslet>
 ```
 
-The snipped can be anywhere in the page:
+The script can be anywhere in the page:
 
 ```js
 <script src="https://unpkg.com/vue"></script>
