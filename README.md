@@ -26,6 +26,7 @@ _The widget will accept the following parameter:_
 | product-name | string | Nice t-shirt blue |
 | product-image | string | https://ibb.co/kBxS8XM |
 | product-url | string | https://shop.com/add-to-card | 
+| product-gender | string | male | 
 
 ## Installation
 
@@ -37,6 +38,7 @@ Place the widget where you want it to be visible.
     product-name="NiceSweater"
     product-image="https://image.jpg"
     product-url="https://shop.com/product"
+    product-gender="female"
 >
   Size me up!
 </faslet>
@@ -46,5 +48,10 @@ The script can be anywhere in the page:
 
 ```js
 <script src="https://unpkg.com/vue"></script>
+
+// prod
 <script src="https://faslet-prod.web.app/faslet-app.min.js"></script>
+
+// dev
+<script src="https://faslet-dev.web.app/faslet-app.min.js"></script>
 ```
