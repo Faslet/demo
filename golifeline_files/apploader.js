@@ -1,4 +1,4 @@
-// 2021-02-16 10:33:35
+// 2021-02-23 11:03:35
 
 // Lightspeed eCom APPs by © VIEWSION.net
 // @license: www.golifeline.nl
@@ -16,7 +16,7 @@ $vA.lang=document.documentElement.getAttribute("lang")||"en";var $vT={};$vT.cLoc
 
 
 // Trusted Shops 2.0
-$(document).ready((function(){var a=["nl","de","en"],e=$vA.lang.split("-")[0];$.inArray(e,a)>-1?($.ajaxSetup({cache:!0}),$vT.Trace("https://seoshop.viewsion.net/apps/js/c/dc635/trustbadge/vts__"+e+".js?v=1613468015"),$.getScript("https://seoshop.viewsion.net/apps/js/c/dc635/trustbadge/vts__"+e+".js?v=1613468015").done((function(){}))):$vT.Trace("No Trusted Shop ID for this language ("+e+") found!")}));
+$(document).ready((function(){var a=["nl","de","en"],e=$vA.lang.split("-")[0];$.inArray(e,a)>-1?($.ajaxSetup({cache:!0}),$vT.Trace("https://seoshop.viewsion.net/apps/js/c/dc635/trustbadge/vts__"+e+".js?v=1614074615"),$.getScript("https://seoshop.viewsion.net/apps/js/c/dc635/trustbadge/vts__"+e+".js?v=1614074615").done((function(){}))):$vT.Trace("No Trusted Shop ID for this language ("+e+") found!")}));
 
 $(document).ready(function(){ $(".vJsChk").removeClass('vJsChk'); });	
 
