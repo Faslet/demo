@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-// SEOshop 16-02-2021 14:38:53
-=======
-// SEOshop 16-02-2021 14:29:43
->>>>>>> Stashed changes
+// SEOshop 23-02-2021 11:30:59
