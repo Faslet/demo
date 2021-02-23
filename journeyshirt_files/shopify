@@ -1,0 +1,110 @@
+(function(d, w, c) {
+    w.ChatraID = 'A6HyBzRo8Wu3tD3KY';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+(function () {
+    var cachedData = {};
+
+    var fetchExists = typeof window.fetch === 'function';
+    var isNativeFetch = (
+        typeof window.fetch === 'function' &&
+        typeof fetch.toString === 'function' &&
+        fetch.toString().indexOf('[native code]') !== -1
+    );
+    var isNativeXMLHttpRequest = (
+        typeof XMLHttpRequest === 'function' &&
+        typeof XMLHttpRequest.toString === 'function' &&
+        XMLHttpRequest.toString().indexOf('[native code]') !== -1
+    );
+    var useFetch = (
+        isNativeFetch ||
+        (fetchExists && !isNativeXMLHttpRequest)
+    );
+    function ajax (url, callback) {
+        if (useFetch) {
+            fetch(url)
+                .then(res => {
+                    if (res.ok) {
+                        res.json()
+                            .then(data => {
+                                callback(data);
+                            })
+                            .catch(() => {});
+                    }
+                })
+                .catch(() => {});
+
+            if (!isNativeFetch) {
+                useFetch = false;
+            }
+        }
+        else {
+            var httpRequest = new XMLHttpRequest();
+            var otherFn;
+
+            httpRequest.onreadystatechange = function () {
+                if (httpRequest.readyState === 4) {
+                    if (httpRequest.status === 200) {
+                        try {
+                            callback(JSON.parse(httpRequest.responseText));
+                        }
+                        catch (err) {}
+                    }
+                }
+
+                if (typeof otherFn === 'function') otherFn();
+            };
+
+            try {
+                Object.defineProperty(httpRequest, 'onreadystatechange', {
+                    set: function (fn) {
+                        otherFn = fn;
+                    }
+                });
+            }
+            catch (e) {}
+
+            httpRequest.open('GET', url);
+            httpRequest.send();
+
+            if (fetchExists && !isNativeXMLHttpRequest) {
+                useFetch = true;
+            }
+        }
+    }
+
+    function formatPrice (price) {
+        return (price / 100).toFixed(2);
+    }
+
+    function pollCart () {
+        ajax('/cart.js?Dyo8o6fYTacbWPfPY=1', function (cart) {
+            var cartArr = [];
+
+            for (var i = 0; i < cart.items.length; i++) {
+                var item = cart.items[i];
+
+                cartArr.push((item.quantity != 1? '['+item.quantity+'] ': '') + item.title + (item.price? ', ' + formatPrice(item.price):''));
+            }
+
+            var data = {
+                    'Cart': cartArr.join('\n') || 'empty',
+                    'Total': cart.total_price? formatPrice(cart.total_price): null
+                };
+
+            if (data['Cart'] != cachedData['Cart'] || data['Total'] != cachedData['Total']) {
+                Chatra('updateIntegrationData', data);
+                cachedData = data;
+            }
+        });
+    }
+
+    setInterval(pollCart, 15000);
+    pollCart();
+})();
