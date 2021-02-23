@@ -20,14 +20,15 @@ this. You could also use an image or icon instead of only text to trigger the Fa
 
 _The widget will accept the following parameter:_
 
-| Parameter | Type | Example |
-| ------ | ------ | ------ | 
-| shop-id | string | demo-shop |
-| product | string | t-shirt |
-| product-name | string | Nice t-shirt blue |
-| product-image | string | https://ibb.co/kBxS8XM |
-| product-url | string | https://shop.com/add-to-card | 
-| product-gender | string | male | 
+| Parameter | Type | Example | Explanation |
+| ------ | ------ | ------ |  ------ | 
+| shop-id | string | demo-shop | Unique shop identifier |
+| product | string | t-shirt | Product category |
+| product-name | string | Nice t-shirt blue | Visible product name |
+| product-image | string | https://ibb.co/kBxS8XM | Visible product image |
+| product-url | string | https://shop.com/add-to-card | Url to add it to cart |
+| product-gender | string | male | Pre-defined gender, will hide gender selection |
+| add-to-cart | string | addToCart | Global method name to be called on add to cart action
 
 ## Installation
 
@@ -41,6 +42,7 @@ Place the widget where you want it to be visible.
     product-image="https://image.jpg"
     product-url="https://shop.com/product"
     product-gender="female"
+    add-to-cart="addToCart"
 >
     Size me up!
 </faslet>
@@ -67,5 +69,8 @@ passed to widget such as id, name, etc.
     }
 </script>
 ```
+
+It's also possible run jquery methods like the example bellow to add a product to the cart.
+`$('#product_configure_form').submit();`
 
 As an alternative you can specify the `product-url` property. That will be used when the user clicks on `add to cart`. 
